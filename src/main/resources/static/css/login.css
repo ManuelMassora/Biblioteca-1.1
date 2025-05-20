@@ -1,0 +1,121 @@
+:root {
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --gray-dark: #222;
+    --gray-mid: #666;
+    --gray-light: #f1f1f1;
+    --primary: #333;
+    --primary-hover: #444;
+    --radius: 8px;
+}
+
+body {
+    background: var(--bg-light);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--gray-dark);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 24px;
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+form {
+    background: var(--white);
+    padding: 32px 28px;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 16px rgba(34,34,34,0.08);
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    color: var(--gray-mid);
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px 12px;
+    border: 1px solid var(--gray-light);
+    border-radius: var(--radius);
+    background: var(--bg-light);
+    font-size: 15px;
+    color: var(--gray-dark);
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+button[type="submit"] {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+    background: var(--primary-hover);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 8px;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.error {
+    color: #c0392b;
+    background: #ffeaea;
+    border: 1px solid #f5c6cb;
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.message {
+    color: #155724;
+    background: #eafaf1;
+    border: 1px solid #b7e4c7;
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
